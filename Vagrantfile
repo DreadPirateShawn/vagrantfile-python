@@ -22,7 +22,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.provision :shell, :path => "install-apt.sh"
 
-  # Git
+  # Misc configs
   config.vm.provision :file, :source => "~/.gitconfig", :destination => "/home/vagrant/.gitconfig"
+  config.vm.provision :file, :source => "~/.vimrc", :destination => "/home/vagrant/.vimrc"
 
 end
