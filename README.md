@@ -8,8 +8,8 @@ Features
 
 | Resource | Flavor |
 | :------------ | ---------------: |
-| OS | Ubuntu 14.04 LTS |
-| Vagrant box | ubuntu/trusty32 |
+| OS | Ubuntu 20.04 LTS |
+| Vagrant box | ubuntu/focal64 |
 | Python | apt-get default  |
 | ipython | apt-get default  |
 | python-pyke | apt-get default  |
