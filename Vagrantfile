@@ -12,6 +12,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     p.memory = 2048
   end
 
+  config.vm.network "forwarded_port", guest: 8080, host: 8080   # apache, e.g. for google api auth
+
   config.ssh.forward_agent = true
 
   config.vm.synced_folder "/home/sfalkho/Documents/github", "/coding_sync/github",
